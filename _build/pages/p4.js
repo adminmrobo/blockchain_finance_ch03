@@ -72,8 +72,8 @@ function spread(sc){var a=NET.bfs([0]).dist,b=sc==='double'?NET.bfs([29]).dist:n
     ins($('#ins2'),m);}
   mod(c2b,drawB,true);addEventListener('resize',upd);upd();})();
 
-Duel({names:{fly:'초파리 (은행식)',robo:'Money-Robo (비트코인식)'},higherIsBetter:false,drawMargin:0,
+Duel({names:{fly:'초파리 (은행식)',robo:'주판봇 (비트코인식)'},higherIsBetter:false,drawMargin:0,
   run:function(){var n=1000;return {fly:n*(1+1+1),robo:n*1};},bar:function(v){return v/3000;},fmt:function(v){return fmt(v)+'개';},
   lesson:'거래 하나가 내역이자 증서면 맞춰 볼 문서가 줄어든다',
-  say:function(r){return '송금 1,000건에 생긴 서로 다른 문서는 초파리 쪽 '+fmt(r.fly)+'개, Money-Robo 쪽 '+fmt(r.robo)+'개예요. 은행식은 두 은행의 원장과 확인증을 서로 맞춰야 해요.';}});
+  say:function(r){return '송금 1,000건에 생긴 서로 다른 문서는 초파리 쪽 '+fmt(r.fly)+'개, 주판봇 쪽 '+fmt(r.robo)+'개예요. 은행식은 두 은행의 원장과 확인증을 서로 맞춰야 해요.';}});
 }});

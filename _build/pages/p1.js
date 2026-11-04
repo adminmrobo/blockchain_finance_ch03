@@ -62,8 +62,8 @@ function score(w){var a=0,b=0;CRIT.forEach(function(c,i){a+=w[i]*c[1];b+=w[i]*c[
     ins($('#ins2'),m);drawA();}
   mod(c2b,drawB,true);addEventListener('resize',upd);upd();})();
 
-Duel({names:{fly:'초파리 (작업증명)',robo:'Money-Robo (지분증명)'},higherIsBetter:false,drawMargin:0,
+Duel({names:{fly:'초파리 (작업증명)',robo:'주판봇 (지분증명)'},higherIsBetter:false,drawMargin:0,
   run:function(){return {fly:energy('pow',10,100),robo:energy('pos',10,100)};},bar:function(v){return Math.max(0.02,Math.log10(v)/5);},fmt:function(v){return fmt(v)+'단위';},
   lesson:'에너지만 보면 지분증명이 훨씬 적게 든다. 보안과 탈중앙화는 다른 저울에 올려야 한다',
-  say:function(r){return '블록 100개에 쓴 에너지는 초파리 쪽 '+fmt(r.fly)+'단위, Money-Robo 쪽 '+fmt(r.robo)+'단위예요(예시 단위). 약 '+fmt(r.fly/r.robo)+'배 차이고, 막대는 로그 눈금이에요.';}});
+  say:function(r){return '블록 100개에 쓴 에너지는 초파리 쪽 '+fmt(r.fly)+'단위, 주판봇 쪽 '+fmt(r.robo)+'단위예요(예시 단위). 약 '+fmt(r.fly/r.robo)+'배 차이고, 막대는 로그 눈금이에요.';}});
 }});

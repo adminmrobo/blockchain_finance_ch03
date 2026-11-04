@@ -53,8 +53,8 @@ function btcSupply(year){var blocks=840000+year*52560,s=0,b=0,i=0;while(b<blocks
     ins($('#ins2'),[M,['m','법정화폐 쪽 수치는 예시 시나리오예요. 이 페이지는 어느 견해가 맞는지 판정하지 않아요.']]);drawA();drawB(0);}
   mod(c2b,drawB,true);addEventListener('resize',upd);upd();})();
 
-Duel({names:{fly:'초파리 (원화 가격표)',robo:'Money-Robo (비트코인 가격표)'},higherIsBetter:false,drawMargin:0,
+Duel({names:{fly:'초파리 (원화 가격표)',robo:'주판봇 (비트코인 가격표)'},higherIsBetter:false,drawMargin:0,
   run:function(){return {fly:walk(0.001,0.05,44).re.length,robo:walk(0.04,0.05,44).re.length};},bar:function(v){return Math.max(0.01,v/15);},fmt:function(v){return v+'번';},
   lesson:'값이 크게 흔들리면 가격표를 자주 고쳐야 한다. 결제 수단으로서는 안정성이 먼저다',
-  say:function(r){return '30일 동안 가격표를 고친 횟수는 초파리 쪽 '+r.fly+'번, Money-Robo 쪽 '+r.robo+'번이에요. 같은 시드, 다른 변동 폭(0.1% 대 4%, 예시값)이에요.';}});
+  say:function(r){return '30일 동안 가격표를 고친 횟수는 초파리 쪽 '+r.fly+'번, 주판봇 쪽 '+r.robo+'번이에요. 같은 시드, 다른 변동 폭(0.1% 대 4%, 예시값)이에요.';}});
 }});

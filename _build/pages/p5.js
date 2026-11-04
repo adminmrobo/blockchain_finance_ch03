@@ -57,8 +57,8 @@ var DUEL_LEAK=clusters('fresh',4,35).links[0][0];
     ins($('#ins2'),[msg,['m','모아 쓰기 횟수를 0으로 내리면 새 주소 쪽은 1건만 드러나요. 횟수를 늘릴수록 덩어리가 커져요.']]);drawA();drawB(0);}
   mod(c2b,drawB,true);addEventListener('resize',upd);upd();})();
 
-Duel({names:{fly:'초파리 (거래마다 새 주소)',robo:'Money-Robo (주소 하나 재사용)'},higherIsBetter:false,drawMargin:0,
+Duel({names:{fly:'초파리 (거래마다 새 주소)',robo:'주판봇 (주소 하나 재사용)'},higherIsBetter:false,drawMargin:0,
   run:function(){return {fly:exposed('fresh',4,35,DUEL_LEAK).cnt,robo:exposed('reuse',4,35,DUEL_LEAK).cnt};},bar:function(v){return v/20;},fmt:function(v){return v+'건';},
   lesson:'거래마다 새 주소를 쓰면 하나가 드러나도 피해가 덩어리 크기로 줄어든다',
-  say:function(r){return '주소 하나가 드러났을 때 함께 드러난 받은 거래는 초파리 쪽 '+r.fly+'건, Money-Robo 쪽 '+r.robo+'건이에요. 초파리 쪽도 모아 쓰기로 묶인 만큼은 드러났어요.';}});
+  say:function(r){return '주소 하나가 드러났을 때 함께 드러난 받은 거래는 초파리 쪽 '+r.fly+'건, 주판봇 쪽 '+r.robo+'건이에요. 초파리 쪽도 모아 쓰기로 묶인 만큼은 드러났어요.';}});
 }});

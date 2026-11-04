@@ -2,7 +2,7 @@ import json, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from template import say
 from build import CHAPTER, ROOT, SRC
-RES = {'3-01': ('R', 'Money-Robo 승'), '3-02': ('R', 'Money-Robo 승'), '3-03': ('D', '무승부'), '3-04': ('R', 'Money-Robo 승'),
+RES = {'3-01': ('R', '주판봇 승'), '3-02': ('R', '주판봇 승'), '3-03': ('D', '무승부'), '3-04': ('R', '주판봇 승'),
        '3-05': ('F', '초파리 승'), '3-06': ('F', '초파리 승'), '3-07': ('F', '초파리 승')}
 COL = {'F': 'var(--c-fly)', 'R': 'var(--c-robo)', 'D': 'var(--amber)', 'X': 'var(--c-fly)'}
 DESC = {'3-01': '계산 경쟁으로 뽑을까, 지분으로 뽑을까. 교안의 비교표를 내 기준으로 다시 읽는다.',
@@ -52,8 +52,8 @@ html = f'''<!DOCTYPE html><html lang="ko"><head>
   <tr><td>3-07</td><td>범죄 악용과 추적</td><td>공개 장부를 따라 확인 지점까지</td><td>확인 지점에 닿지 않는 흐름 · 편 끝</td></tr></tbody></table></div>
 </div></section>
 <section class="level" id="score"><div class="wrap"><h2>대결 결산</h2>
-  <section class="kpis"><div class="kpi" style="border-top-color:var(--c-fly)"><b>{tally['F']}승</b><span>초파리 연구원</span></div><div class="kpi" style="border-top-color:var(--c-robo)"><b>{tally['R']}승</b><span>Money-Robo</span></div><div class="kpi a"><b>{tally['D']}번</b><span>무승부</span></div></section>
-  {say('doc','judge','doc_e10','3장은 3 대 3, 무승부 1. 에너지·단가·서류 수는 Money-Robo가, 주소 습관·가격표·추적은 초파리가 가져갔다. 블록체인 편 전체로는 초파리 10승, Money-Robo 9승, 무승부 2.')}
+  <section class="kpis"><div class="kpi" style="border-top-color:var(--c-fly)"><b>{tally['F']}승</b><span>초파리 연구원</span></div><div class="kpi" style="border-top-color:var(--c-robo)"><b>{tally['R']}승</b><span>주판봇</span></div><div class="kpi a"><b>{tally['D']}번</b><span>무승부</span></div></section>
+  {say('doc','judge','doc_e10','3장은 3 대 3, 무승부 1. 에너지·단가·서류 수는 주판봇이, 주소 습관·가격표·추적은 초파리가 가져갔다. 블록체인 편 전체로는 초파리 10승, 주판봇 9승, 무승부 2.')}
 </div></section>
 <section class="level" id="about"><div class="wrap"><h2>이 저장소</h2>
   <p class="sub">각 HTML은 assets/ 폴더의 공용 파일(lab.css, lab.js, sprites.js)을 불러옵니다. 저장소를 통째로 올리거나 내려받아 index.html을 열면 됩니다. 편마다 맨 끝의 "온톨로지·서지 꾸러미"에서 지식 그래프와 참고문헌을 ZIP으로 가져갈 수 있습니다.</p>

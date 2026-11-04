@@ -49,8 +49,8 @@ function isCk(f,p){return f.u<p;}
     ins($('#ins2'),[[cd?'a':'r',exit==='yes'?'직접 이체는 지갑 '+n+'개를 거쳐도 확인 지점이 없다가, 현금화 창구에서 1곳이 생겨요. 거기서 공개 장부를 거슬러 올라가 앞선 이동을 이어 볼 수 있어요(①칸).':'현금화 창구를 거치지 않으면 확인 지점이 하나도 없어요. 교안이 말한 "규제 우회"예요.'],['m','확인 지점의 수와 시간은 모형 가정이에요. 실제 절차는 나라와 사업자마다 달라요.']]);drawA();drawB(0);}
   mod(c2b,drawB,true);addEventListener('resize',upd);upd();})();
 
-Duel({names:{fly:'초파리 (6홉까지 추적)',robo:'Money-Robo (바로 연결된 것만)'},higherIsBetter:true,drawMargin:0,
+Duel({names:{fly:'초파리 (6홉까지 추적)',robo:'주판봇 (바로 연결된 것만)'},higherIsBetter:true,drawMargin:0,
   run:function(){return {fly:traced(6,0.7),robo:traced(1,0.7)};},bar:function(v){return Math.max(0.01,v/20);},fmt:function(v){return v+'갈래';},
   lesson:'주소에 이름이 없어도 공개 장부의 길은 남는다. 끝까지 따라가면 신원 확인 지점에 닿는다',
-  say:function(r){return '신원 확인 지점까지 연결된 갈래는 초파리 쪽 '+r.fly+'갈래, Money-Robo 쪽 '+r.robo+'갈래예요. 같은 20갈래, 같은 확인 지점 비율(모형 가정)이에요.';}});
+  say:function(r){return '신원 확인 지점까지 연결된 갈래는 초파리 쪽 '+r.fly+'갈래, 주판봇 쪽 '+r.robo+'갈래예요. 같은 20갈래, 같은 확인 지점 비율(모형 가정)이에요.';}});
 }});

@@ -57,8 +57,8 @@ function year(i){return i===4?'2024년 4월':i===0?'2009년':'약 '+(2009+4*i)+'
     m.push(['a','이 모형은 수수료를 시기와 관계없이 같다고 둬요. 실제 수수료는 거래 수요에 따라 오르내려요.']);ins($('#ins2'),m);drawA();drawB(0);}
   mod(c2b,drawB,true);addEventListener('resize',upd);upd();})();
 
-Duel({names:{fly:'초파리 (사토시까지 더하기)',robo:'Money-Robo (2,100만 어림)'},higherIsBetter:false,drawMargin:0.1,
+Duel({names:{fly:'초파리 (사토시까지 더하기)',robo:'주판봇 (2,100만 어림)'},higherIsBetter:false,drawMargin:0.1,
   run:function(){var exact=btc(TOTAL);return {fly:Math.abs(exact-exact),robo:Math.abs(21e6-exact)};},bar:function(v){return Math.min(1,v/0.1);},fmt:function(v){return fb(v,4)+' BTC';},
   lesson:'2,100만은 규칙을 더한 값의 어림이다. 정확한 값과 0.0231 BTC 차이',
-  say:function(r,res){return '실제 합계와의 차이는 초파리 쪽 '+fb(r.fly,4)+' BTC, Money-Robo 쪽 '+fb(r.robo,4)+' BTC예요. 차이가 0.1 BTC 기준 안이라 '+(res==='D'?'무승부예요.':'승패가 갈렸어요.');}});
+  say:function(r,res){return '실제 합계와의 차이는 초파리 쪽 '+fb(r.fly,4)+' BTC, 주판봇 쪽 '+fb(r.robo,4)+' BTC예요. 차이가 0.1 BTC 기준 안이라 '+(res==='D'?'무승부예요.':'승패가 갈렸어요.');}});
 }});

@@ -56,8 +56,8 @@ var PF=0.5,RG=-5,OUT=sim(PF,RG),FC=[C.robo,C.info,C.stain];
     ins($('#ins2'),[[qq>0.5?'r':'a',(dist==='y1'?'첫해':'10년째')+' 분포에서 상위 '+k+'곳이 손잡으면 몫은 '+(qq*100).toFixed(1)+'%, 6블록을 기다린 뒤 공격 성공 확률은 '+sig(P)+'.'+(qq>0.5?' 과반이라 기다려도 막을 수 없어요.':'')],['m','이 분포에서 과반에 필요한 최소 채굴자 수는 '+mc+'곳이에요.']]);drawA();}
   window.__p2upd=function(){newRace();upd();};mod(c2b,drawB,true);addEventListener('resize',upd);newRace();upd();})();
 
-Duel({names:{fly:'초파리 (집 한 대)',robo:'Money-Robo (채굴장)'},higherIsBetter:false,drawMargin:0,
+Duel({names:{fly:'초파리 (집 한 대)',robo:'주판봇 (채굴장)'},higherIsBetter:false,drawMargin:0,
   run:function(){return {fly:cost(1.0,1.0),robo:cost(0.5,0.8)};},bar:function(v){return v/2.5;},fmt:function(v){return v.toFixed(1);},
   lesson:'규모가 클수록 계산 단가가 낮다. 그래서 계산력은 채굴장으로 모인다',
-  say:function(r){return '계산력 한 단위의 연간 단가는 초파리 쪽 '+r.fly.toFixed(1)+', Money-Robo 쪽 '+r.robo.toFixed(1)+'이에요(예시 단위). 같은 보상을 받으면 단가가 낮은 쪽이 남아요.';}});
+  say:function(r){return '계산력 한 단위의 연간 단가는 초파리 쪽 '+r.fly.toFixed(1)+', 주판봇 쪽 '+r.robo.toFixed(1)+'이에요(예시 단위). 같은 보상을 받으면 단가가 낮은 쪽이 남아요.';}});
 }});
