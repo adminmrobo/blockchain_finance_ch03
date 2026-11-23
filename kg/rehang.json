@@ -1,0 +1,182 @@
+{
+ "version": "1.0",
+ "made": "2026-11-24",
+ "via": "rehang-2026-11-24",
+ "domains": [
+  "fin"
+ ],
+ "note": "분야 뼈대 주제에 다시 걸기(ai-lab-retrofit 15장). links는 자동 후보이며 틀린 줄은 지우면 된다. 빌드 스크립트가 있는 저장소는 빌드 끝에 rehang.apply_overlay()가 이 파일을 적용한다.",
+ "topics": {
+  "lab:topic/bitcoin": {
+   "ko": "비트코인",
+   "en": "Bitcoin",
+   "domain": [
+    "fin"
+   ],
+   "level": 2
+  },
+  "lab:topic/blockchain-consensus": {
+   "ko": "합의 알고리즘",
+   "en": "Consensus algorithms",
+   "domain": [
+    "fin"
+   ],
+   "level": 2
+  },
+  "lab:topic/economies-of-scale": {
+   "ko": "규모의 경제",
+   "en": "Economies of scale",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/mechanism-design": {
+   "ko": "메커니즘 설계·경매",
+   "en": "Mechanism design and auctions",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/privacy": {
+   "ko": "프라이버시",
+   "en": "Privacy",
+   "domain": [
+    "ai",
+    "crime"
+   ],
+   "level": 4
+  },
+  "lab:topic/volatility-decomposition": {
+   "ko": "변동성 분해",
+   "en": "Volatility decomposition",
+   "domain": [
+    "fin"
+   ],
+   "level": 3
+  }
+ },
+ "links": {
+  "lab:concept/bitcoin": {
+   "topic": "lab:topic/bitcoin",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "비트코인"
+  },
+  "lab:concept/block-reward": {
+   "topic": "lab:topic/bitcoin",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "채굴 보상"
+  },
+  "lab:concept/decentralization": {
+   "topic": "lab:topic/blockchain-consensus",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "탈중앙화 정도"
+  },
+  "lab:concept/double-spending": {
+   "topic": "lab:topic/blockchain-consensus",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "이중 지불"
+  },
+  "lab:concept/economies-of-scale": {
+   "topic": "lab:topic/economies-of-scale",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "규모의 경제"
+  },
+  "lab:concept/halving": {
+   "topic": "lab:topic/bitcoin",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "반감기"
+  },
+  "lab:concept/honest-incentive": {
+   "topic": "lab:topic/mechanism-design",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "규칙을 지키는 편이 이득"
+  },
+  "lab:concept/majority-attack": {
+   "topic": "lab:topic/blockchain-consensus",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "51% 공격"
+  },
+  "lab:concept/pseudonymity": {
+   "topic": "lab:topic/privacy",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "익명성"
+  },
+  "lab:concept/supply-cap": {
+   "topic": "lab:topic/bitcoin",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "발행 한도"
+  },
+  "lab:concept/transaction-fee": {
+   "topic": "lab:topic/bitcoin",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "거래 수수료"
+  },
+  "lab:concept/utxo": {
+   "topic": "lab:topic/bitcoin",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "UTXO"
+  },
+  "lab:method/halving-schedule": {
+   "topic": "lab:topic/bitcoin",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "반감기 발행 일정"
+  },
+  "lab:method/proof-of-stake": {
+   "topic": "lab:topic/blockchain-consensus",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "지분증명"
+  },
+  "lab:method/proof-of-work": {
+   "topic": "lab:topic/blockchain-consensus",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "작업증명"
+  },
+  "lab:method/utxo-spend": {
+   "topic": "lab:topic/bitcoin",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "조각 쓰기 (입력을 쓰고 출력을 만듦)"
+  },
+  "lab:metric/volatility": {
+   "topic": "lab:topic/volatility-decomposition",
+   "score": 2,
+   "why": "개념 이름이 주제 이름에 들어 있음",
+   "ko": "변동성"
+  },
+  "lab:term/node": {
+   "topic": "lab:topic/blockchain-consensus",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "노드"
+  },
+  "lab:term/satoshi": {
+   "topic": "lab:topic/bitcoin",
+   "score": 3,
+   "why": "사람이 고름",
+   "ko": "사토시"
+  }
+ },
+ "retag": {
+  "from": [],
+  "to": [
+   "fin"
+  ]
+ }
+}
